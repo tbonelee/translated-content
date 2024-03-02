@@ -35,7 +35,7 @@ slug: Learn/CSS/CSS_layout/Positioning
 
 HTML 요소에 적용될 수 있는 여러 가지 유형의 위치잡기가 존재합니다. 어떤 요소상에 특정 유형의 위치잡기가 활성화되도록 하기 위해 {{cssxref("position")}} 속성을 사용합니다.
 
-### 정적 위치잡기
+## 정적 위치잡기
 
 정적 위치잡기는 모든 요소에 주어지는 기본값입니다. 즉, "요소를 문서 레이아웃 대열상에 일반 위치에 배치하라는 것으로 여기서 특별한 것은 없습니다."
 
@@ -58,7 +58,7 @@ HTML 요소에 적용될 수 있는 여러 가지 유형의 위치잡기가 존�
 
 > **참고:** **주석**: 이 시점에 예제의 실제 구현 장면을 [`1_static-positioning.html`](http://mdn.github.io/learning-area/css/css-layout/positioning/1_static-positioning.html)에서 볼 수 있습니다.([소스 코드는 여기서 보세요](https://github.com/mdn/learning-area/blob/master/css/css-layout/positioning/1_static-positioning.html)).
 
-### 상대 위치잡기
+## 상대 위치잡기
 
 상대 위치잡기는 우리가 살펴 첫 번째 위치 유형입니다. 이것은 정적 위치 결정과 매우 유사합니다. 단, 일단 정상 레이아웃 대열상에 위치잡기할 요소가 자리를 잡고나면 페이지의 다른 요소와 중첩되는 것을 포함하여 최종 위치를 수정할 수 있습니다. 당신의 코드에 있는 `position` 선언을 업데이트하십시요.
 
@@ -143,7 +143,7 @@ span {
 
 > **참고:** 이 시점에 예제의 실제 구현 장면을 [`2_relative-positioning.html`](http://mdn.github.io/learning-area/css/css-layout/positioning/2_relative-positioning.html)에서 확인할 수 있습니다([소스 코드 보기](https://github.com/mdn/learning-area/blob/master/css/css-layout/positioning/2_relative-positioning.html)).
 
-### 절대 위치잡기
+## 절대 위치잡기
 
 절대적인 위치 결정은 매우 다른 결과를 가져옵니다. 당신의 소스 코드에 다음과 같이 위치 선언을 변경해 보겠습니다.
 
@@ -398,7 +398,7 @@ z-인덱스는 단위가 없는 인덱스 값만 허용한다는 점에 유의�
 
 > **참고:** 이 시점에 예제의 실제 구현 장면을 [`5_z-index.html`](http://mdn.github.io/learning-area/css/css-layout/positioning/5_z-index.html)에서 볼 수 있습니다([소스 코드 보기](https://github.com/mdn/learning-area/blob/master/css/css-layout/positioning/5_z-index.html)).
 
-### 고정 위치잡기
+## 고정 위치잡기
 
 이제 고정 위치잡기를 살펴보자. 이것은 절대 위치잡기와 정확히 같은 방식으로 작동합니다.단 한 가지 핵심 차이점이 있습니다. 절대 위치잡기는 {{htmlelement("html")}} 요소나 가까운 조상 요소를 기준으로 비례해 요소를 고정시키지만, 고정 위치잡기는 브라우저 뷰 포트 자체를 기준으로 비례해 요소를 고정합니다. 즉, 탐색 메뉴가 계속 자리를 지키는 것과 같이 제자리에 고정된 유용한 사용자 인터페이스 항목을 생성할 수 있습니다.
 
