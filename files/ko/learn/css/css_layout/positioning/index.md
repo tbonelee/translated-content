@@ -503,9 +503,13 @@ p:nth-of-type(1) {
 
 > **참고:** 당신은 이 시점에 예제의 실제 구현 장면을 [`6_fixed-positioning.html`](http://mdn.github.io/learning-area/css/css-layout/positioning/6_fixed-positioning.html)에서 볼 수 있습니다 ([소스 코드는 여기서 보세요](https://github.com/mdn/learning-area/blob/master/css/css-layout/positioning/6_fixed-positioning.html)).
 
-### position: sticky
+## 흡착 위치잡기
 
-이용할 수 있는 `position: sticky`라고 불리우는 또 다른 위치잡기 값이 있습니다. 이것은 다른 위치잡기보다 다소 새로운 것입니다. 이것은 기본적으로 상대 위치잡기와 고정 위치잡기가 혼합된 하이브리드로서, 위치잡기 요소가 특정 임계점에(예로 뷰포트의 상단으로부터 10px) 스크롤될 때까지 상대 위치잡기처럼 행동할 수 있다가 그 뒤에 위치가 고정됩니다. 예를 들어, 탐색 막대가 특정 지점까지 페이지와 함께 스크롤한 다음 페이지 상단에 흡착되도록 사용할 수 있습니다.
+이용할 수 있는 `position: sticky`라고 불리우는 또 다른 위치잡기 값이 있습니다. 이것은 다른 위치잡기보다 다소 새로운 것입니다. 이것은 기본적으로 상대 위치잡기와 고정 위치잡기가 혼합된 하이브리드로서, 위치잡기 요소가 특정 임계점에(예로 뷰포트의 상단으로부터 10px) 스크롤될 때까지 상대 위치잡기처럼 행동할 수 있다가 그 뒤에 위치가 고정됩니다. 
+
+### 기본 예제
+
+예를 들어 흡착 위치잡기는 탐색 막대가 특정 지점까지 페이지와 함께 스크롤한 다음 페이지 상단에 흡착되도록 사용할 수 있습니다.
 
 ```html hidden
 <h1>흡착 위치잡기</h1>
@@ -570,7 +574,9 @@ body {
 }
 ```
 
-{{ EmbedLiveSample('흡착_1', '100%', 200) }}
+{{ EmbedLiveSample('기본_예제', '100%', 200) }}
+
+### 색인 스크롤링
 
 `position: sticky`의 일반적 사용례기도 하고 흥미로운 사용례는 스크롤링하다 제목에 도달하면 서로 다른 제목이 페이지의 맨 위에 흡착되는 색인 페이지를 만드는 것입니다. 이런 사례에 대한 마크업은 다음과 같은 모습일 수 있습니다:
 
@@ -626,16 +632,6 @@ body {
   height: 1400px;
   margin: 0 auto;
 }
-
-dt {
-  background-color: black;
-  color: white;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  margin: 1em 0;
-}
 ```
 
 ```html hidden
@@ -670,7 +666,7 @@ dt {
 </dl>
 ```
 
-{{ EmbedLiveSample('흡착_2', '100%', 200) }}
+{{ EmbedLiveSample('색인_스크롤링', '100%', 200) }}
 
 > **참고:** 당신은 이 시점에 예제의 실제 구현 장면을 [`7_sticky-positioning.html`](http://mdn.github.io/learning-area/css/css-layout/positioning/7_sticky-positioning.html)에서 볼 수 있습니다([소스 코드는 여기서 보세요](https://github.com/mdn/learning-area/blob/master/css/css-layout/positioning/7_sticky-positioning.html)).
 
